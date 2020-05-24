@@ -23,7 +23,7 @@ namespace SalesWebMvc.Models
 
         public Seeler() { }
 
-        public Seeler(int id, string name, string email, double baseSalary, DateTime birthDay, Department department)
+        public Seeler(int id, string name, string email, DateTime birthDay, double baseSalary, Department department)
         {
             this.Id = id;
             this.Name = name;
