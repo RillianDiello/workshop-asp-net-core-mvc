@@ -13,6 +13,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SalesWebMvc.Models;
 using SalesWebMvc.Data;
+using SalesWebMvc.Services;
 
 namespace SalesWebMvc
 {
@@ -45,6 +46,7 @@ namespace SalesWebMvc
                 builder.MigrationsAssembly("SalesWebMvc")));
 
             services.AddScoped<SeedingService>(); // registro do service seeding no sistema de injeção de dependencias
+            services.AddScoped<SellerService>(); // com isso o service fica disponivel para injeção de dependencias
 
         }
 
