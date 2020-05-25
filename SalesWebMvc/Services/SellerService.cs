@@ -15,5 +15,11 @@ namespace SalesWebMvc.Services
         public List<Seeler> FindAll(){
             return _context.Seeler.ToList();
         }
+
+        public void Insert(Seeler obj)
+        {
+            _context.Add(obj);
+            _context.SaveChanges();
+        }
     }
 }
