@@ -42,7 +42,7 @@ namespace SalesWebMvc.Services
 
             try{
                 _context.Update(obj);
-                _context.SaveChanges()
+                _context.SaveChanges();
             }catch(DbUpdateConcurrencyException e){
                 throw new DbConcurrencyException(e.Message);
             }
